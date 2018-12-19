@@ -1,15 +1,15 @@
 .card{
   /*border: 1px solid black;*/
-  width: 220px;
-  height: 320px;
+  width: 250px;
+  height: 380px;
   margin: 10vmin 0;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #333251;
 }
 .card .title {
-  background-color: #22a7f0;
-  height: 20%;
+  /* background-color: #504F74; */
+  height: 15%;
   display: flex;
   align-items: center;
   border-radius: 3px 3px 0 0;
@@ -29,6 +29,7 @@
 }
 
 .card .info .presenter{
+  margin: 10px 0;
   height: 50%;
   display: flex;
   align-items: center;
@@ -39,25 +40,28 @@
   text-align: center;
   flex-grow: 1;
   font-size: 20px;
+  color: #fff;
 }
 
 .card .info .presenter img{
+  margin: 0 0.5em;
   width: 50%;
+  border-radius: 5px;
 }
 
 .card .info p{
-  margin: 1em 0.5em;
-  font-size: 15px;
-  color: #2e3131;
+  margin: 1.2em 0.5em;
+  font-size: 14px;
+  color: #fff;
 }
 
 .card .button{
   width: 80%;
   height: 20%;
-  margin: 0 20px;
-  background-color:#599bb3;
+  margin: 23px 25px;
+  background-color:rgb(105, 49, 228);
   border:none;
-	border-radius:3px;
+	border-radius:50px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -69,7 +73,7 @@
 }
 
 .card .button:hover {
-	background-color:#408c99;
+	background-color:rgba(105, 49, 228, 0.8);
 }
 .card .button:active {
 	position:relative;
