@@ -2,13 +2,11 @@ import React from 'react';
 import './Content.css';
 import Card from '../card/Card';
 
-const Content = () =>
+const Content = props =>
     <div className="content">
-    <Card icon="https://bit.ly/2S5carp" title="React JS" avatar="https://bit.ly/2uSRlUr" name="John Doe" room="CP1" status="Started"/>
-    <Card icon="https://bit.ly/2S5carp" title="React JS" avatar="https://bit.ly/2uSRlUr" name="John Doe" room="CP2" status="Started"/>
-    <Card icon="https://bit.ly/2S5carp" title="React JS" avatar="https://bit.ly/2uSRlUr" name="John Doe" room="CP3" status="Registering"/>
-    <Card icon="https://bit.ly/2S5carp" title="React JS" avatar="https://bit.ly/2uSRlUr" name="John Doe" room="CP4" status="Registering"/>
-    <Card icon="https://bit.ly/2S5carp" title="React JS" avatar="https://bit.ly/2uSRlUr" name="John Doe" room="CP5" status="Started"/>
+          {props.cards.map(card =>
+              <Card icon={card.icon} title={card.title} avatar={card.avatar} name={card.name} room={card.room} status={card.status}/>
+        )}
     </div>
 
 
